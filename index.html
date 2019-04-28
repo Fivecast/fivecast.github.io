@@ -1,531 +1,616 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Fivecast</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel='stylesheet' href='/styles/style.css'/>
-    <script src="/js/jquery.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130614995-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        gtag('config', 'UA-130614995-1');
-    </script>
+  <title>Fivecast</title>
+  <meta name="description" content="">
+
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/fontello.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <script src="/javascripts/libs.js" type="text/javascript"></script>
+  <script>
+    // terrificjs bootstrap
+    (function($) {
+        $(document).ready(function() {
+            var $page = $('body');
+            var config = {
+              dependencyPath: {
+                plugin: 'javascripts/'
+              }
+            }
+            var application = new Tc.Application($page, config);
+            application.registerModules();
+            application.start();
+        });
+    })(Tc.$);
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/masonry.pkgd.js" type="text/javascript"></script>
+  <script src="/javascripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="/javascripts/slick.min.js" type="text/javascript"></script>
+  <script src="/javascripts/json2.js" type="text/javascript"></script>
+  <link rel="canonical" href="https://fivecast.com/">
+  <link rel="alternate" type="application/rss+xml" title="Fivecast" href="https://fivecast.com/feed.xml" />
 </head>
 
-<body>
-<div class="navbar navbar-fixed-left">
 
-    <a class="navbar-brand animate-scroll" href="#">
-        <!-- <img src="images/FiveCastLogo.svg" onerror="this.src='images/FiveCastLogo.png'; this.onerror=null;" alt="FiveCast"> -->
-        <svg width="167" height="146">
-            <image xlink:href="images/FiveCast_LogoReg_RGB.svg" src="images/FiveCast_LogoReg_RGB.png" width="167" height="146" />
-        </svg>
-    </a>
-    <!--<a class="navbar-brand animate-scroll" href="#">-->
-    <!--<img src="images/FiveCast_LogoReg_RGB.png" alt="Fivecast">-->
-    <!--</a>-->
+  <body>
 
-    <ul class="nav navbar-nav dark-grey">
-        <li class="nav-item"><a class="nav-link animate-scroll scroll-marker" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link animate-scroll scroll-marker" href="#products">Products</a></li>
-        <li class="nav-item"><a class="nav-link animate-scroll scroll-marker" href="#ourpeople">Our People</a></li>
-        <li class="nav-item"><a class="nav-link animate-scroll scroll-marker" href="#contact">Contact</a></li>
+    
+
+<div class='contain-to-grid sticky'>
+  <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+    <ul class='title-area'>
+      <li class='name'>
+        <h1>
+          <a href='https://fivecast.com/'>
+              
+<svg width="217" height="50">
+    <image xlink:href="/images/fivecast-logo.svg" src="/images/fivecast-logo.png" width="217" height="50" />
+</svg>
+          </a>
+        </h1>
+      </li>
+      <li class='toggle-topbar menu-icon'>
+        <a href='#'>Menu</a>
+      </li>
     </ul>
+    <section class='top-bar-section'>
+      <ul class="right">
+        
+          
 
-    <div class="navbar-cta"><a href="#contact" class="pill blue animate-scroll">Enquire</a></div>
+          
+          <li class="active">
+              <a href="https://fivecast.com">Home</a>
+          </li>
+          
+        
+          
 
+          
+            <li class="">
+              <a href="https://fivecast.com/about/">About</a>
+            </li>
+          
+        
+          
+
+          
+            <li class="has-dropdown ">
+              <a href="https://fivecast.com/platform/">Platform</a>
+              <ul class='dropdown'>
+                
+                  <li>
+                    <a href="https://fivecast.com/platform/capabilities/">Capabilities</a>
+                  </li>
+                
+                  <li>
+                    <a href="https://fivecast.com/platform/products/">Products</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+          
+
+          
+            <li class="">
+              <a href="https://fivecast.com/use-cases/">Use Cases</a>
+            </li>
+          
+        
+      </ul>
+    </section>
+  </nav>
 </div>
 
-<div class="container-mobile-nav navbar-fixed-top">
-
-    <nav id="mobileNav" class="navbar navbar-mobile">
-
-        <a class="navbar-brand animate-scroll" href="#">
-            <svg width="130" height="30">
-                <image xlink:href="images/FiveCast_LogoReg_RGB_Horiz.svg" src="images/FiveCast_LogoReg_RGB_Horiz_thumb.png" width="130" height="30" />
-            </svg>
+    <div id='main' role='main'>
+      <div class='mod modDefaultSlider'>
+    <div class='sequence' data-autostop='on' data-timeout='0'>
+        <a class='sequence-prev' href='javascript:void(0);'>
+            <span></span>
         </a>
-        <!--<a class="navbar-brand animate-scroll" href="#">-->
-        <!--<img src="images/FiveCast_LogoReg_RGB_Horiz_thumb.png" width="auto" height="30"  alt="Fivecast"/>-->
-        <!--</a>-->
-
-        <div class="navbar-cta"><a href="#contact" class="pill blue">Enquire</a></div>
-
-    </nav>
-
-    <nav class="navbar navbar-mobile-menu">
-        <ul class="nav nav-mobile">
-            <li class="nav-item"><a href="#about" class="nav-link animate-scroll scroll-marker">About</a></li>
-            <li class="nav-item"><a href="#products" class="nav-link animate-scroll scroll-marker">Products</a></li>
-            <li class="nav-item"><a href="#ourpeople" class="nav-link animate-scroll scroll-marker">Our People</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link animate-scroll scroll-marker">Contact</a></li>
+        <a class='sequence-next' href='javascript:void(0);'>
+            <span></span>
+        </a>
+        <ul class='sequence-pagination'>
+            
+            
+            <li class="current"></li>
+            
+            
+            <li class=""></li>
+            
+            
+            <li class=""></li>
+            
         </ul>
-    </nav>
+        <ul class='sequence-canvas'>
+            
+            
 
+            <li class='frame static '>
+                <div class='bg' style='background-image: url(images/home-header.jpg);'></div>
+                <div class='small-title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>AI-enabled threat analytics</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>Discover tomorrow's world, today<span class="regsym">&#174;</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='buttons-wrapper bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <div class='two spacing'></div>
+                            <div class='two spacing'></div>
+                            
+                            <a class='button ' href='#what-we-do'>Learn More <i class="fa fa-arrow-down"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+
+            <li class='frame  centered-text darken'>
+                <div class='bg' style='background-image: url(images/fivecast-insight-header.jpg);'></div>
+                <div class='small-title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>Analyst-driven, targeted threat analysis</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>Fivecast Insight</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='buttons-wrapper bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <div class='two spacing'></div>
+                            <div class='two spacing'></div>
+                            
+                            <a class='button boxed' href='/platform/products#insight'>View Features</a>
+                            
+                            <a class='button ' href='mailto:info@fivecast.com'>Request a demo</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+
+            <li class='frame  centered-text darken'>
+                <div class='bg' style='background-image: url(images/fivecast-ai-header.jpg);'></div>
+                <div class='small-title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>Automated bulk risk assessments</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='title bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <h2>Fivecast AI</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class='buttons-wrapper bottom-to-top'>
+                    <div class='row'>
+                        <div class='large-12 columns'>
+                            <div class='two spacing'></div>
+                            <div class='two spacing'></div>
+                            
+                            <a class='button boxed' href='/platform/products#ai'>View Features</a>
+                            
+                            <a class='button ' href='mailto:info@fivecast.com'>Request a demo</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
 </div>
 
-<script type="text/javascript">
-    var currentSectionId;
-    $(window).scroll(function () {
-        var position = $(this).scrollTop();
-
-        // Set the active section
-        var $activeSection = $('.menu-section').filter(function () {
-            var targetTop = $(this).offset().top;
-            var windowHeight = $(window).height();
-            var offsetPosition = position + (windowHeight * 0.6);
-            // console.log(targetTop, position, offsetPosition);
-            var target = targetTop - $('#wrapper').css('margin-top').replace('px', '');
-            return offsetPosition >= target;
-        }).last();
-        var id = $activeSection.attr('id');
-
-        if (id !== currentSectionId) {
-            $('.navbar > ul > li > a[href="#' + id + '"]').parent().addClass('active');
-            currentSectionId = id;
-            //console.log('===>', id);
-        }
-
-        // Unset any other sections that are active
-        $('.menu-section').filter(function () {
-            var sectionId = $(this).attr('id');
-            return sectionId !== currentSectionId;
-        }).each(function () {
-            var sectionId = $(this).attr('id');
-            $('.navbar > ul > li > a[href="#' + sectionId + '"]')
-                .each(function () {
-                    if ($(this).parent().hasClass('active')) {
-                        $(this).parent().removeClass('active');
-                        //console.log('<===', sectionId);
-                    }
-                })
-        });
-    });
-
-</script><div id="wrapper" class="wrapper">
-    <style>
-        .header .tm {
-            font-size: 0.5em;
-            vertical-align: top;
-            padding: 14px 4px 0px 5px;
-            display: inline-block;
-        }
-        .header .nowrap {
-            white-space: nowrap;
-        }
-    </style>
-
-    <div id="header" class="header section container-fulid">
-        <div class="container">
-            <h4><a href="http://www.d2dcrc.com.au/" target="_blank">A D2D CRC Company</a></h4>
-            <h1>
-                Discover tomorrow's <br>
-                world,
-                <span class="nowrap">
-                <span>today</span><span class="tm">&reg;</span>
-            </span>
-            </h1>
-            <div class="header-scroll">
-                <a href="#about" class="animate-scroll" id="header-scroll-next">
-                    <span class="icon-Scroll white circled-link"></span>
-                </a>
-            </div>
+<div class="full" id="what-we-do">
+    <div class="row compact">
+        <div class="large-12 columns">
+            <div class="mod modSectionHeader ">
+  <div class="special-title centered-text">
+    <h2 style="color: ;">What we do</h2>
+  </div>
+  
+    <h3 class='centered-text' style='color: '>Fivecast. Better forecasts.</h3>
+  
+</div>
+            <div class="spacing"></div>
+            <p class="text-center">
+                From the great mass of unstructured and multimedia data available today, Fivecast surfaces critical insights to solve investigative and intelligence challenges.
+            </p>
+            <p class="text-center">
+                Fivecast operates at the leading edge of AI-enabled technology, delivering world-first behavioural threat analysis capability.
+            </p>
+            <div class="spacing"></div>
         </div>
-    </div>
-    <div id="about" class="about section container-fluid menu-section">
-        <div class="container">
-            <div class="table-layout">
-                <div class="table-layout-cell">
-                    <h2 class="section-title yellow">About Fivecast</h2>
-                    <div class="section-icons">
-                        <span class="icon-Connections yellow"></span>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-9 col-xxl-8 col-offset-md-1">
-                                <p>
-                                    Fivecast delivers insights from data.
-                                </p>
-                                <p>
-                                    Fivecast was formed through a collaboration between Australia's national security
-                                    agencies and various research organisations. Leading organisations turn to Fivecast when
-                                    they need risk-based analytics to answer investigative and intelligence challenges.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="callout" class="callout section container-fluid">
-        <div class="container">
-            <div class="table-layout">
-                <div class="table-layout-cell">
-                    <div class="row">
-                        <div class="col-xs-12 col-xxl-8">
-                            <p class="yellow">
-                                <em>Insight</em> and <em>Discovery</em>&nbsp; are powerful open-source data collection and
-                                analysis platforms that combine to deliver insights from vast quantities of unstructured,
-                                multimedia data. Purpose-built to address the highest priority use cases in the national
-                                security, law enforcement and defence markets, Fivecast has been proven to deliver real
-                                value through increased productivity and actionable insights.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="products" class="products menu-section">
-        <div id="platforms" class="platforms section container-fluid">
-            <div class="container">
-                <div class="table-layout">
-                    <div class="table-layout-cell">
-                        <h2 class="section-title blue">Solutions for entity, network and thematic analysis</h2>
-                        <div class="row">
-                            <div class="col-xs-12 col-lg-6">
-                                <div class="block-section">
-                                    <h3 class="section-title">Fivecast Insight</h3>
-                                    <div class="block-subsection">
-                                        <span class="subsection-title green">Entity</span>
-                                        <p>
-                                            Fivecast Insight provides analysts with a detailed understanding of an online entity to
-                                            answer key questions relevant to their mission. The sophisticated detectors and
-                                            analytical tools provided with Fivecast Insight have the ability for deep-detection of
-                                            factors of interest, visualisations of content and measurement of changes over time.
-                                        </p>
-                                    </div>
-                                    <div class="block-subsection">
-                                        <span class="subsection-title teal">Network</span>
-                                        <p>
-                                            Fivecast Insight provides the ability to understand the collective content and behaviour
-                                            of a group of related or similar entities by placing them into a single investigation.
-                                            Analysts can then examine the relationships between entities, and uncover previously
-                                            unknown connections between key actors. It allows analysts to focus on entities with the
-                                            highest engagement with content of interest.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="block-section">
-                                    <h3 class="section-title">Fivecast Discovery</h3>
-                                    <div class="block-subsection">
-                                        <span class="subsection-title blue">DISCOVERY</span>
-                                        <p>
-                                            Fivecast Discovery provides the ability for user-driven collection and thematic analysis
-                                            of population-level open source information. Advanced geo-tagging and deep-learning
-                                            techniques provide analysts with early indicators and warnings to understand engagement
-                                            with specific narratives, detect the emergence of new topics and even the ability to
-                                            predict future events.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-lg-6 platform-description-image">
-                                <img src="/images/DTD_Fivecast_Analysis_1000px@72dpi.png"/>
-                            </div>
-                            <!--<div class="col-xs-12 col-lg-6" style="position: relative;">-->
-                            <!--<img src="/images/DTD_Fivecast_Analysis_1000px@72dpi.png" style="width:100%; max-width: 500px; position: absolute; right: 0; top: 50%;"/>-->
-                            <!--</div>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>    <div id="features" class="features section container-fluid">
-        <div class="container">
-            <div class="table-layout">
-                <div class="table-layout-cell">
-                    <h2 class="section-title yellow">Key Features</h2>
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Analytics yellow"></span>
-                                    <h3 class="section-title">Sophisticated Analytics</h3>
-                                    <p>
-                                        Fivecast software employs a range of sophisticated configurable detectors that work
-                                        across text and image content that can be configured for key terms or phrases,
-                                        objects and scenes in images, and quoted material.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Visualisation yellow"></span>
-                                    <h3 class="section-title">Visualisation &amp; Exploration of Data</h3>
-                                    <p>
-                                        Users can visualise changes to the social network, content and detections over time.
-                                        All of the content is indexed so analysts can quickly search across large volumes of
-                                        stored historical data.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Alerts yellow"></span>
-                                    <h3 class="section-title">Automated Change Detection &amp; Alerts</h3>
-                                    <p>
-                                        The tools can be set to continuously ingest new content as it is produced and
-                                        proactively alert analysts of changes. Automation of monitoring process saves
-                                        countless hours.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Foresight yellow"></span>
-                                    <h3 class="section-title">Foresight</h3>
-                                    <p>
-                                        Fivecast provides prediction not detection. A range of predictive geo-political risk
-                                        analytics models give deep insight and allow agencies to mitigate risks rather than
-                                        react to potentially disruptive events.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Storage yellow"></span>
-                                    <h3 class="section-title">Targeted &amp; Automated Collection & Storage</h3>
-                                    <p>
-                                        Fivecast has automated the collection of data from a range of open-source platforms.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <ul class="section-icons">
-                                <li>
-                                    <span class="icon-Platform yellow"></span>
-                                    <h3 class="section-title">Organised User-Configurable Platform</h3>
-                                    <p>
-                                        The easy to use and intuitive user interface allows automation of repetitive tasks,
-                                        focusing analysts on critical insights.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></div> <div id="ourpeople" class="ourpeople section container-fluid menu-section">
-    <div class="container">
+
         <div class="row">
-            <div class="col-xs-12">
-                <h3 class="section-title yellow">The Board</h3>
-                <div class="row">
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Andrew Stead.jpg">
-                        <p>Andrew Stead</p>
-                        <span class="subsection-title">Chairman</span>
-                    </div>
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Sanjay Mazumdar.jpg">
-                        <p>Dr Sanjay Mazumdar</p>
-                        <span class="subsection-title">Board Director</span>
-                    </div>
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Chris Constable.jpg">
-                        <p>Chris Constable</p>
-                        <span class="subsection-title">Board Director</span>
-                    </div>
-                </div>
+            <div class="medium-4 large-4 columns">
+                <div class='fadein mod modIconText' data-delay='0'>
+  <div class='icon-text-circle'>
+    <i class='fa fa-bar-chart'></i>
+    <h3>Simplify</h3>
+    <p>Fivecast simplifies your most complex problems to give your analysts a deeper insight.</p>
+  </div>
+  <div class='two spacing'></div>
+</div>
             </div>
-            <div class="col-xs-12">
-                <h3 class="section-title yellow">The Team</h3>
-                <div class="row">
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Brenton Cooper.jpg">
-                        <p>Dr Brenton Cooper</p>
-                        <span class="subsection-title">Chief Executive Officer</span>
-                    </div>
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Duane Rivett.png">
-                        <p>Duane Rivett</p>
-                        <span class="subsection-title">VP Commercial</span>
-                    </div>
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/David Blockow.jpg">
-                        <p>David Blockow</p>
-                        <span class="subsection-title">VP Engineering</span>
-                    </div>
-                    <div class="ourpeople-item col-xs-6 col-sm-3 col-md-3">
-                        <img src="../images/Ross Buglak.png">
-                        <p>Ross Buglak</p>
-                        <span class="subsection-title">VP Product</span>
-                    </div>
-                </div>
+            <div class="medium-4 large-4 columns">
+                <div class='fadein mod modIconText' data-delay='200'>
+  <div class='icon-text-circle'>
+    <i class='fa fa-filter'></i>
+    <h3>Consolidate</h3>
+    <p>Gain powerful insights across a wide variety of data sources.</p>
+  </div>
+  <div class='two spacing'></div>
+</div>
+            </div>
+            <div class="medium-4 large-4 columns">
+                <div class='fadein mod modIconText' data-delay='200'>
+  <div class='icon-text-circle'>
+    <i class='fa fa-cogs'></i>
+    <h3>Automate</h3>
+    <p>Automated risk detection frees up your staff to focus on what they do best</p>
+  </div>
+  <div class='two spacing'></div>
+</div>
             </div>
         </div>
     </div>
-</div> <div id="contact" class="contact section container-fulid menu-section">
-    <div class="container">
-        <div class="table-layout">
-            <div class="table-layout-cell">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="row">
-                    <div class="col-md-6 col-xs-12">
-                        <div class="contact-callout">
-                            We'd love to hear from you.
-                        </div>
-                        <p>If you have any questions or would like more information, please get in touch.</p>
-                        <p>Base64, 64 North Terrace Kent Town, SA 5067</p>
-                        <div class="contact-cta">
-                            <a href="mailto:info@fivecast.com" class="pill blue">
-                                Get In Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </div>
 
-    <script type="text/javascript">
-        $(function () {
-            $("#contactForm").validate(
-                {
-                    highlight: function (element) {
-                        $(element).closest('.form-group').addClass('has-error');
-                    },
-                    unhighlight: function (element) {
-                        $(element).closest('.form-group').removeClass('has-error');
-                    },
-                    errorElement: 'span',
-                    submitHandler: function (form) {
-                        var success = function () {
-                            $('#contact .alert-success').removeClass('hidden');
-                            $('#contactForm button').prop('disabled', false);
-                        };
+<div class="spacing"></div>
 
-                        var fail = function (form) {
-                            $('#contact .alert-warning').removeClass('hidden');
-                            $('#contactForm button').prop('disabled', false);
-                        }
-
-                        $('#contactForm button').prop('disabled', true);
-                        $.post("/", $('#contactForm').serialize())
-                            .done(success)
-                            .fail(fail);
-                    }
-                }
-            );
-        });
-    </script>
-
-    <script type="text/javascript">
-
-        var $inputs = $('#contactForm input, textarea'), //create variable for DOM elements of contact form
-            $labels = $('#contactForm label');
-
-        $(function () {
-
-            $inputs.focus(function () { //on focus of contact form inputs.
-
-                //check if the input has class already. if not add class.
-                if (!$(this).next('label').hasClass('input-active')) {
-
-                    $(this).parent('.form-group').addClass('input-active');
-                    $(this).parent('.form-group').find('label').addClass('input-active');
-
-                    //if is textarea add class to increase height
-                    if ($(this).is('textarea')) {
-                        $(this).addClass('increase-height');
-                    }
-
-                }
-
-            }).blur(function () { //on unfocus of contact form inputs.
-
-                //check if input is empty. if true remove class.
-                if (!$.trim(this.value).length) { // zero-length string AFTER a trim
-
-                    $(this).parent('.form-group').removeClass('input-active');
-                    $(this).parent('.form-group').find('label').removeClass('input-active');
-
-                    //if is textarea remove class to decrease height
-                    if ($(this).is('textarea')) {
-                        $(this).removeClass('increase-height');
-                    }
-
-                }
-
-            });
-
-            $labels.click(function () {
-                $(this).prev('input, textarea').focus();
-            });
-
-        });
-
-    </script>
-    <div class="footer container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <p>
-                        Email us direct<br>
-                        <a href="mailto:info@fivecast.com">Contact us</a>
-                    </p>
+<div class='full' style='background: #f5f5f5'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <div class="mod modSectionHeader ">
+  <div class="special-title centered-text">
+    <h2 style="color: ;">What makes us different</h2>
+  </div>
+  
+    <h3 class='centered-text' style='color: '>The Fivecast toolkit</h3>
+  
+</div>
+            <div class='two spacing'></div>
+        </div>
+        <div class="auto-fiddy-fiddy-layout">
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='0'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-file-image-o' aria-hidden="true"></i>
+                    
+                    <h3>Threat detections across image, text and video</h3>
+                    <p>Using sophisticated, configurable detectors to ingest key terms or phrases, objects and scenes in images, and quoted material</p>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <p>
-                        Want to work with us? <br>
-                        <a href="http://www.d2dcrc.com.au/careers/" target="_blank">Find out more</a>
-                    </p>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='50'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-magic' aria-hidden="true"></i>
+                    
+                    <h3>Powered by deep learning</h3>
+                    <p>Using artificial intelligence to teach machines to learn like humans</p>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <p>
-                        &reg; Fivecast&#8482; <br>
-                        <a href="http://www.d2dcrc.com.au/" target="_blank">A D2D CRC Company</a>
-                    </p>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='100'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-repeat' aria-hidden="true"></i>
+                    
+                    <h3>Consistent and repeatable threat assessments across bulk data</h3>
+                    <p>Arming analysts with clearly defined, uniform threat models based on consistent metrics to aim at bulk data problems</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='150'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-bar-chart' aria-hidden="true"></i>
+                    
+                    <h3>Threat visualisation</h3>
+                    <p>Presenting insights from mass data that are easy to consume and understand</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='200'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-picture-o' aria-hidden="true"></i>
+                    
+                    <h3>Image analysis</h3>
+                    <p>Revealing AI-enabled insights from visual data, and pattern recognition</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='250'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='icon-network' aria-hidden="true"></i>
+                    
+                    <h3>Network analysis</h3>
+                    <p>Understanding the collective content and behavior of a group of related, or similar entities</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='300'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-database' aria-hidden="true"></i>
+                    
+                    <h3>Advanced data collection and exploration</h3>
+                    <p>Applying automated data collection to a wide range of open-source platforms</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        <div>
+            <div class='fadein mod modIconText' data-delay='350'>
+                <div class='icon-text-simple'>
+                    
+                    <i class='fa fa-bell' aria-hidden="true"></i>
+                    
+                    <h3>Automated change detection and alerts</h3>
+                    <p>Monitoring new content in open source data, in real time. Proactively alerting analysts to change</p>
+                </div>
+                <div class='two spacing'></div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <div class="spacing"></div>
+</div>
+
+
+<div class='full parallax'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <p class='centered-text'>
+                <i class='fa fa-quote-left' style='color: #00AED2; font-size: 36px;'></i>
+            </p>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <div class="mod modSectionHeader ">
+  <div class="special-title centered-text">
+    <h2 style="color: ;">What our customers are saying</h2>
+  </div>
+  
+</div>
+            <div class='spacing'></div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <div class='mod modTestimonials'>
+                <div class='row'>
+                    <div class='small-12 columns'>
+                        <div class='items centered-text'>
+                            
+                            <div class='item'>
+                                <p class='quote'>"Fivecast has been able to identify crucial interactions and associations in networks that are not identifiable via manual interrogation."</p>
+                                <p class='author'>- Intelligence Analyst</p>
+                                <div class='two spacing'></div>
+                            </div>
+                            
+                            <div class='item'>
+                                <p class='quote'>"Fivecast is able to effectively automate routine intelligence activities reducing the risk of threats being missed and reducing analyst workload, allowing better prioritisation."</p>
+                                <p class='author'>- Law Enforcement Public Safety Analyst</p>
+                                <div class='two spacing'></div>
+                            </div>
+                            
+                            <div class='item'>
+                                <p class='quote'>"Our collaboration with Fivecast has been productive and valuable, and their system has helped to fill gaps in our team’s knowledge and understanding of online spaces."</p>
+                                <p class='author'>- National Security End User</p>
+                                <div class='two spacing'></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class='spacing'></div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="spacing"></div>
 </div>
 
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/animatescroll.js"></script>
-<script src="/js/jquery.validate.min.js"></script>
+<div class='full parallax darken' style='background-image: url(/images/call-to-action-header.jpg); color: #fff;'>
+    <div class='row'>
+        <div class='large-12 columns'>
+            <div class="mod modSectionHeader ">
+  <div class="special-title centered-text">
+    <h2 style="color: #fff;">See it in action</h2>
+  </div>
+  
+</div>
+            <div class='spacing'></div>
+            <p class='centered-text' style='color: #fff; font-size: 1.4em;'>
+                Touch base to schedule a personalised demonstration of Fivecast’s software solutions.  
+            </p>
+            <div class='spacing'></div>
+            <p class='centered-text' >
+                <a class="button blue" href="mailto:info@fivecast.com">Request a Demo</a>
+            </p>
+        </div>
+    </div>
+    <div class='two spacing'></div>
+</div>
+    </div>
 
-<script type="text/javascript">
-    var animateLinks = function ($links) {
+    <div id='footer'>
+  <div class='three spacing'></div>
+  <div class='row'>
+    <div class='large-4 medium-4 columns'>
+      <div class="company-info">
+        <h1>
+          <a href='https://fivecast.com/'>
+            <svg width="217" height="50">
+              <image xlink:href="/images/fivecast-footer-logo.svg" src="/images/fivecast-footer-logo.png" width="217" height="50" />
+            </svg>
+          </a>
+        </h1>
+        <p>&#169; 2019 Fivecast&#174; Pty Ltd <br /> All rights reserved</p>
+        <div class='spacing'></div>
+        <div class='spacing'></div>
+      </div>
+    </div>
+    <div class='large-2 medium-2 columns'>
+      <div class='spacing'></div>
+      <div class='links'>
+        <h4>Sitemap</h4>
+        <ul>
+          
+          
 
-        $links.each(function () {
-            var $link = $(this);
-            var linkTo = $link.attr('href');
-            linkTo = linkTo == '#' ? '#header' : linkTo;
-            var $linkTo = $(linkTo);
+          <li class="active">
+            <a href="https://fivecast.com///">Home</a>
+          </li>
+          
+          
 
-            $link.click(function (ev) {
-                ev.preventDefault();
-                var options = {padding: $('#wrapper').css('margin-top').replace('px', '')};
-                $linkTo.animatescroll(options);
-            });
-        });
-    };
+          <li class="">
+            <a href="https://fivecast.com/about/">About</a>
+          </li>
+          
+          
 
-    $(function () {
-        animateLinks($('.animate-scroll'));
-    });
-</script>
-</body>
+          <li class="">
+            <a href="https://fivecast.com/platform/">Platform</a>
+          </li>
+          
+          
+
+          <li class="">
+            <a href="https://fivecast.com/use-cases/">Use Cases</a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class='spacing'></div>
+    </div>
+    <div class='large-2 medium-2 columns'>
+      <div class='spacing'></div>
+      <div class='links'>
+        <h4>Products</h4>
+        <ul>
+          <li class="">
+            <a href="/platform/products#insight">Fivecast Insight</a>
+          </li>
+          <li class="">
+            <a href="/platform/products#ai">Fivecast AI</a>
+          </li>
+        </ul>
+      </div>
+      <div class='spacing'></div>
+    </div>
+    <div class='large-3 medium-3 columns'>
+      <div class='spacing'></div>
+      <h4>Contact Us</h4>
+      <ul>
+        <li>
+          Email: <a href="mailto:info@fivecast.com">info@fivecast.com</a>
+        </li>
+        <li>
+          Location: <a href="https://goo.gl/maps/di66DBAn4YC2">Base64, 64 North Terrace Kent Town, SA 5067</a>
+        </li>
+      </ul>
+      <div class='spacing'></div>
+      <ul class='socials'>
+        
+        <li>
+          <a href='mailto:info@fivecast.com' title="Email">
+            <i class='fa fa-envelope'></i>
+          </a>
+        </li>
+        
+        <li>
+          <a href='https://goo.gl/maps/di66DBAn4YC2' title="Visit Us">
+            <i class='fa fa-map-marker'></i>
+          </a>
+        </li>
+        
+        <li>
+          <a href='https://www.linkedin.com/company/fivecast' title="LinkedIn">
+            <i class='fa fa-linkedin'></i>
+          </a>
+        </li>
+        
+      </ul>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+<script src="/javascripts/jquery.countTo.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.appear.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.validate.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.sequence-min.js" type="text/javascript"></script>
+<script src="/javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="/javascripts/app.js" type="text/javascript"></script>
+
+  </body>
 
 </html>
