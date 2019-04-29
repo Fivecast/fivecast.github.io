@@ -8,7 +8,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Apex Serif", Raleway, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
-p {
+p, ul li {
   font-size: 1.15em; }
 
 @media only screen and (max-width: 480px) {
