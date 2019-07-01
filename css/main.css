@@ -73,7 +73,8 @@ span.regsym {
   .parallax.teal .special-title h2::after {
     background: #FFF176; }
   .parallax.yellow::before {
-    background-color: #FFF176; }
+    background-color: #FFF176;
+    opacity: 0.88; }
   .parallax.yellow .modSectionHeader h2, .parallax.yellow .modSectionHeader h3 {
     color: #444 !important; }
   .parallax.yellow .special-title h2::after {

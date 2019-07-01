@@ -1052,6 +1052,9 @@ form input.error, form textarea.error {
 .pager a {
   color: #999;
 }
+.pager span {
+  opacity: 0.5;
+}
 .pager a:hover {
   color: #F9CE06;
 }

@@ -5,9 +5,23 @@
     <description></description>
     <link>https://fivecast.com/</link>
     <atom:link href="https://fivecast.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Jun 2019 10:56:40 +0930</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2019 10:56:40 +0930</lastBuildDate>
+    <pubDate>Mon, 01 Jul 2019 17:07:31 +0930</pubDate>
+    <lastBuildDate>Mon, 01 Jul 2019 17:07:31 +0930</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Fivecast Secures VC Funding And Announces Its Expansion Into The US market</title>
+        <description>&lt;p&gt;Fivecast has secured a $4 million investment round from &lt;a href=&quot;https://mseq.vc/&quot;&gt;Main Sequence Ventures&lt;/a&gt;’ CSIRO Innovation Fund and the &lt;a href=&quot;http://innovation.sa.gov.au/opportunity/south-australian-venture-capital-fund/&quot;&gt;South Australian Venture Capital Fund (SAVCF)&lt;/a&gt;. This round will drive international expansion and product growth for the company’s key product line, &lt;a href=&quot;/products/insight/&quot;&gt;Fivecast Insight&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An official press release is available for download &lt;a href=&quot;/resources/Fivecast Investment Press Release 1JUL19.pdf&quot;&gt;here&lt;/a&gt; and further discussions about the investment and the companies expansion plans are available in a recent &lt;a href=&quot;https://www.afr.com/technology/technology-companies/ai-start-up-raises-funds-in-bid-to-help-us-govt-assess-visa-applicants-20190626-p521d8&quot;&gt;Australian Financial Review article&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 01 Jul 2019 00:00:00 +0930</pubDate>
+        <link>https://fivecast.com/2019/07/01/fivecast-secures-vc-funding.html</link>
+        <guid isPermaLink="true">https://fivecast.com/2019/07/01/fivecast-secures-vc-funding.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>
