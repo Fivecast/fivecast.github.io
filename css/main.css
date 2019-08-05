@@ -180,6 +180,24 @@ button.yellow, a.button.yellow {
     background-color: #00AED2;
     color: #fff; }
 
+.modCareerPosition {
+  padding: 40px 30px 20px;
+  margin-bottom: 40px;
+  background: #fff; }
+  .modCareerPosition h3 {
+    font-size: 1.6em; }
+  .modCareerPosition .excerpt h1, .modCareerPosition .excerpt h2, .modCareerPosition .excerpt h3, .modCareerPosition .excerpt h4, .modCareerPosition .excerpt h5, .modCareerPosition .excerpt h6 {
+    display: none; }
+
+.positionPage h1, .positionPage h2, .positionPage h3, .positionPage h4, .positionPage h5, .positionPage h6 {
+  margin-top: 40px; }
+  .positionPage h1:first-child, .positionPage h2:first-child, .positionPage h3:first-child, .positionPage h4:first-child, .positionPage h5:first-child, .positionPage h6:first-child {
+    margin-top: 0; }
+.positionPage ul li p {
+  font-size: 1em; }
+.positionPage ul.info {
+  margin-left: 0; }
+
 .about-image {
   width: 100%;
   max-width: 510px;
@@ -267,6 +285,14 @@ ul.info i {
 
 ul.info i:hover {
   background: #00AED2; }
+
+ul.info a.disabled i {
+  border: 1px solid #999;
+  color: #999;
+  cursor: default; }
+
+ul.info a.disabled i:hover {
+  background: none; }
 
 .pager a:hover {
   color: #00AED2; }
